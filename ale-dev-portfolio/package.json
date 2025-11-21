@@ -1,0 +1,53 @@
+{
+  "name": "ale-dev-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "author": {
+    "name": "Alessio Giacché",
+    "email": "ale.giacc.dev@gmail.com"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:watch": "eslint . --watch",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@radix-ui/react-accordion": "^1.2.3-rc.3",
+    "@radix-ui/react-alert-dialog": "^1.1.6",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.554.0",
+    "next-themes": "^0.4.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0",
+    "react-simple-icons": "^1.0.0-beta.5",
+    "simple-icons": "^15.21.0",
+    "sonner": "^2.0.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.47.0",
+    "vite": "^7.2.4"
+  }
+}
