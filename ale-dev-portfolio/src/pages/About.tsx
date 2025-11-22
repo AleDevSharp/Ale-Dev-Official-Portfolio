@@ -40,9 +40,8 @@ export function About() {
             <h2 className="mb-4 text-gray-900">About Me</h2>
             <div className="w-20 h-1 bg-orange-600 mx-auto mb-6"></div>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              I am a motivated Junior Software Developer with a passion for technology. I enjoy
-              continuous learning and taking on new challenges to improve my software development
-              skills.
+              I am a motivated Software Developer with a passion for technology. I enjoy continuous
+              learning and taking on new challenges to improve my software development skills.
             </p>
           </div>
 

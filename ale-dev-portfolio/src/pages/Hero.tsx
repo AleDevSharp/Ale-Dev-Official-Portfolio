@@ -46,8 +46,8 @@ export function Hero() {
             </div>
           </div>
 
-          <h1 className="mb-6 text-white bold" style={{ fontWeight: 'bold' }}>
-            Software Developer
+          <h1 className="mb-6 text-white text-2xl font-bold" style={{ fontWeight: 'bold' }}>
+            Alessio Giacché - Software Developer
           </h1>
 
           <p className="mb-8 text-white max-w-2xl mx-auto">

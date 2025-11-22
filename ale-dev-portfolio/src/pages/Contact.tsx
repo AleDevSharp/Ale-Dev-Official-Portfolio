@@ -95,18 +95,24 @@ export function Contact() {
     {
       icon: MapPin,
       title: 'Position',
-      value: 'Italy, Marche',
+      value: 'Marche, Italy',
     },
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-orange-50 to-red-100">
+    <section
+      id="contact"
+      className="py-20"
+      style={{
+        background: 'linear-gradient(135deg, #FFB74D 0%, #FF9933 50%, #FF7043 100%)',
+      }}
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="mb-4 text-gray-900">Contact Me</h2>
+            <h2 className="mb-4 text-white">Contact Me</h2>
             <div className="w-20 h-1 bg-orange-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-3xl mx-auto">
+            <p className="text-white max-w-3xl mx-auto">
               I'm always interested in new opportunities for learning and collaboration. If you
               would like to connect or discuss technology, I'd be delighted to hear from you!
             </p>
@@ -219,7 +225,12 @@ export function Contact() {
                 </div>
 
                 <div className="mt-6 flex justify-end">
-                  <Button type="submit" size="lg" disabled={isLoading}>
+                  <Button
+                    type="submit"
+                    size="lg"
+                    disabled={isLoading}
+                    style={{ cursor: 'pointer' }}
+                  >
                     {isLoading ? (
                       <>
                         <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />

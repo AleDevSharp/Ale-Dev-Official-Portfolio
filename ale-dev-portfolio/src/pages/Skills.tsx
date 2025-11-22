@@ -7,6 +7,7 @@ import { Card } from '../components/card';
  * @since 1.0.0
  */
 export function Skills() {
+  // The skill categories
   const skillCategories = [
     {
       category: 'Frontend',
@@ -26,10 +27,42 @@ export function Skills() {
     },
   ];
 
+  // The badge skill colors
+  const skillColors: Record<string, { bg: string; text: string }> = {
+    Angular: { bg: '#ef4444', text: '#ffffff' },
+    React: { bg: '#06b6d4', text: '#ffffff' },
+    TypeScript: { bg: '#2563eb', text: '#ffffff' },
+    HTML: { bg: '#f97316', text: '#ffffff' },
+    'CSS/SCSS': { bg: '#3b82f6', text: '#ffffff' },
+
+    'C#': { bg: '#9333ea', text: '#ffffff' },
+    '.NET': { bg: '#7e22ce', text: '#ffffff' },
+    'Node.js': { bg: '#16a34a', text: '#ffffff' },
+    Express: { bg: '#1f2937', text: '#ffffff' },
+    Python: { bg: '#facc15', text: '#111827' },
+    'Rest API': { bg: '#4f46e5', text: '#ffffff' },
+    Websocket: { bg: '#1d4ed8', text: '#ffffff' },
+
+    'SQL Express': { bg: '#dc2626', text: '#ffffff' },
+    MongoDB: { bg: '#22c55e', text: '#ffffff' },
+    Supabase: { bg: '#059669', text: '#ffffff' },
+    PostgreSQL: { bg: '#1e3a8a', text: '#ffffff' },
+    MySQL: { bg: '#ea580c', text: '#ffffff' },
+
+    Git: { bg: '#f97316', text: '#ffffff' },
+    GitHub: { bg: '#1f2937', text: '#ffffff' },
+    'VS Code': { bg: '#2563eb', text: '#ffffff' },
+    'Visual Studio': { bg: '#7e22ce', text: '#ffffff' },
+    Postman: { bg: '#f97316', text: '#ffffff' },
+    npm: { bg: '#ef4444', text: '#ffffff' },
+    '...': { bg: '#6b7280', text: '#ffffff' },
+  };
+
+  // The stats for personal projects etc.
   const stats = [
     { number: '10+', label: 'Personal Projects' },
-    { number: '15+', label: 'Technologies Studied' },
-    { number: '1000+', label: 'Commit' },
+    { number: '10+', label: 'Technologies Studied' },
+    { number: '1000+', label: 'Code Contributions' },
     { number: '∞', label: 'Desire to Learn' },
   ];
 
@@ -64,15 +97,45 @@ export function Skills() {
             {skillCategories.map((category, index) => (
               <Card key={index} className="p-6 bg-white border border-gray-200 shadow-sm">
                 <h3 className="mb-4 text-lg font-semibold text-gray-900">{category.category}</h3>
+
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skillIndex}
-                      className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                  {category.skills.map((skill, skillIndex) => {
+                    // Recupero colore
+                    let colors = skillColors[skill];
+
+                    // Prova variazioni (senza slash, senza spazi, lowercase...)
+                    if (!colors) {
+                      const variations = [
+                        skill,
+                        skill.replace('/', ''),
+                        skill.replace(' ', ''),
+                        skill.toLowerCase(),
+                      ];
+
+                      for (const variation of variations) {
+                        if (skillColors[variation]) {
+                          colors = skillColors[variation];
+                          break;
+                        }
+                      }
+                    }
+
+                    // Fallback
+                    const finalColors = colors || { bg: '#6b7280', text: '#ffffff' };
+
+                    return (
+                      <span
+                        key={skillIndex}
+                        style={{
+                          backgroundColor: finalColors.bg,
+                          color: finalColors.text,
+                        }}
+                        className="px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {skill}
+                      </span>
+                    );
+                  })}
                 </div>
               </Card>
             ))}

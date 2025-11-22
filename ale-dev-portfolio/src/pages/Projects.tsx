@@ -6,7 +6,7 @@ import { ImageWithFallback } from '../shared/components/ImageWithFallback';
 import FGymAppImage from '../assets/images/f-gymapp.png';
 import NasdaqMasterImage from '../assets/images/nasdaq-master.png';
 import PortfolioImage from '../assets/images/portfolio.png';
-import SoupImage from '../assets/images/soup-software.jpg';
+import SoupImage from '../assets/images/soup.png';
 import SpLibImage from '../assets/images/sp-lib.png';
 
 /**
