@@ -15,7 +15,7 @@ export function Skills() {
     },
     {
       category: 'Backend',
-      skills: ['C#', '.NET', 'Node.js', 'Express', 'Python', 'Rest API', 'Websocket'],
+      skills: ['C#', '.NET', 'Node.js', 'Express', 'Python'],
     },
     {
       category: 'Database',
@@ -40,8 +40,6 @@ export function Skills() {
     'Node.js': { bg: '#16a34a', text: '#ffffff' },
     Express: { bg: '#1f2937', text: '#ffffff' },
     Python: { bg: '#facc15', text: '#111827' },
-    'Rest API': { bg: '#4f46e5', text: '#ffffff' },
-    Websocket: { bg: '#1d4ed8', text: '#ffffff' },
 
     'SQL Express': { bg: '#dc2626', text: '#ffffff' },
     MongoDB: { bg: '#22c55e', text: '#ffffff' },

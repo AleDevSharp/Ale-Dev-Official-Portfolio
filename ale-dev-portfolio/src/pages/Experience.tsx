@@ -11,14 +11,16 @@ export function Experience() {
   // Define education
   const education = [
     {
-      degree: 'Diploma from ITIS “A. Meucci” – Information Technology and Telecommunications',
-      institution: "ITIS 'A. Meucci'",
-      location: 'Castelfidardo, Italy',
-      period: 'Sept 2015 - June 2020',
-      description: 'High school diploma focused on computer science and telecommunications.',
+      degree: "Master's Degree in Computer Science – Software Development & Technologies",
+      institution: 'University of Camerino (UNICAM)',
+      location: 'Camerino, Italy',
+      period: 'Sept 2024 - Present',
+      description:
+        "Master's program focusing on advanced software development, software architecture, Agile methodologies, and emerging technologies like blockchain.",
       achievements: [
-        'Studied programming, networking, and computer systems',
-        'Participated in mathematics and informatics competitions',
+        'Specialized in software architecture, Agile practices, and advanced programming',
+        'Working on sophisticated projects and research in software engineering',
+        'Deepening expertise in full-stack development, modern technologies, and best practices',
       ],
     },
     {
@@ -35,16 +37,14 @@ export function Experience() {
       ],
     },
     {
-      degree: "Master's Degree in Computer Science – Software Development & Technologies",
-      institution: 'University of Camerino (UNICAM)',
-      location: 'Camerino, Italy',
-      period: 'Sept 2024 - Present',
-      description:
-        "Master's program focusing on advanced software development, software architecture, Agile methodologies, and emerging technologies like blockchain.",
+      degree: 'Diploma from ITIS “A. Meucci” – Information Technology and Telecommunications',
+      institution: "ITIS 'A. Meucci'",
+      location: 'Castelfidardo, Italy',
+      period: 'Sept 2015 - June 2020',
+      description: 'High school diploma focused on computer science and telecommunications.',
       achievements: [
-        'Specialized in software architecture, Agile practices, and advanced programming',
-        'Working on sophisticated projects and research in software engineering',
-        'Deepening expertise in full-stack development, modern technologies, and best practices',
+        'Studied programming, networking, and computer systems',
+        'Participated in mathematics and informatics competitions',
       ],
     },
   ];
@@ -71,7 +71,7 @@ export function Experience() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="mb-4 text-gray-900">Experience & Education</h2>
+            <h2 className="mb-4 text-gray-900">Education & Experience</h2>
             <div className="w-20 h-1 bg-orange-600 mx-auto mb-6"></div>
             <p className="text-gray-600 max-w-3xl mx-auto">
               My professional and educational background that led me to become a software developer.
